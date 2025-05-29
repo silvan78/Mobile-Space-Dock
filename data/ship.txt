@@ -1,0 +1,59 @@
+ship "Mobile Space Dock"
+	name "Navy Mobile Space Dock Nx1"
+	sprite "MobileSpaceDock"
+	thumbnail "MobileSpaceDock-thumb"
+	attributes
+		category "Utility"
+		"cost" 35560000
+		"shields" 11000
+		"hull" 5200
+		"required crew" 25
+		"bunks" 150
+		"mass" 2100
+		"drag" 25.5
+		"heat dissipation" .55
+		"fuel capacity" 500
+		"cargo space" 310
+		"outfit space" 650
+		"weapon capacity" 200
+		"engine capacity" 180
+	outfits
+		"Heavy Anti-Missile Turret" 6
+		"Fusion Reactor"
+		"LP144a Battery Pack"
+		"D94-YV Shield Generator"
+		"Large Radar Jammer"
+		"Ramscoop"
+		"Laser Rifle" 25
+		"X4700 Ion Thruster"
+		"X5200 Ion Steering"
+		"Hyperdrive"
+
+	turret -77.5 -188.5
+	turret 63 -191.5
+	turret -77.5 -103.5
+	turret 64 -106
+	turret -80 211.5
+	turret 64 214.5
+	engine -56 277
+	engine 36 279.5
+	"reverse engine" -52 -263
+	"reverse engine" 29.5 -265.5
+	"steering engine" 130 -131
+	"steering engine" -131 -122
+	"steering engine" 131.5 130.5
+	"steering engine" -134.5 127.5
+	bay Fighter -8 -187 under
+	bay Fighter -8 -101 under
+
+	leak "leak" 30 50
+	leak "flame" 30 80
+	leak "big leak" 50 30
+	explode "small explosion" 25
+	explode "medium explosion" 35
+	explode "large explosion" 45
+	explode "huge explosion" 30
+	"final explode" "final explosion large"
+
+	description "This is an experimental Navy Mobile Space Dock fielded for in-situ repairs and outfit changes. As this is a utiliy vessel, if has poor offensive capabilities with only few deffensive turrets and figher bays. It is meant to be a forward repair base for Navy long range operations, without any combat roles assigned."
+	description "The dock has to be deployed before the outfitter is operational."

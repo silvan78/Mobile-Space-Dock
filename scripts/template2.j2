@@ -1,0 +1,49 @@
+mission "Fleet: Deploy MSD on {{ origin }}"
+	name "Fleet: Deploy MSD on {{ origin }}"
+	description `Deploy the Mobile Space Dock installations on the orbit of {{ origin }} for in-situ reparis and outfit changes. Deployed MSD dock cannot re-redeployed elsewhere unless repacked. Check MSD log to track deployment.`
+	repeat
+	job
+	source "{{ origin }}"
+	destination "{{ origin }}"
+	to offer
+		has "Acquire Mobile Space Dock: done"
+		has "ship model: Mobile Space Dock"
+		not "Fleet: Mobile Space Dock deployed"
+		not "Fleet: Mobile Space Dock deployed: {{ origin }}"
+	on accept
+#		remove log "MSD log" "Deployment"
+		log "MSD log" "Deployment" "MSD was deployed on <destination>."
+		set "Fleet: Mobile Space Dock deployed"
+		set "Fleet: Mobile Space Dock deployed: {{ origin }}"
+		dialog `Your MSD was deployed on orbit of {{ origin }}. Redock to use.`
+		event "Fleet: Deploy MSD on {{ origin }}"
+		fail
+
+event "Fleet: Deploy MSD on {{ origin }}"
+	planet "{{ origin }}"
+		add outfitter "Mobile Space Dock Outfitter"
+
+mission "Fleet: Pack MSD on {{ origin }}"
+	name "Fleet: Pack MSD on {{ origin }}"
+	description `Disassemble some Mobile Space Dock installtions on {{ origin }} and pack is into the MSD vessel so it can be redeployed elsewhere.`
+	repeat
+	job
+	source "{{ origin }}"
+	destination "{{ origin }}"
+	to offer
+		has "Acquire Mobile Space Dock: done"
+		has "ship model: Mobile Space Dock"
+		has "Fleet: Mobile Space Dock deployed"
+		has "Fleet: Mobile Space Dock deployed: {{ origin }}"
+	on accept
+#		remove log "MSD log" "Deployment"
+		log "MSD log" "Deployment" "The Mobile Space Dock equipment is stored onboard MSD and the ship is ready for the next deployment."
+		clear "Fleet: Mobile Space Dock deployed"
+		clear "Fleet: Mobile Space Dock deployed: {{ origin }}"
+		dialog `Your MSD was successfully packed`
+		event "Fleet: Pack MSD on {{ origin }}"
+		fail
+
+event "Fleet: Pack MSD on {{ origin }}"
+	planet "{{ origin }}"
+		remove outfitter "Mobile Space Dock Outfitter"

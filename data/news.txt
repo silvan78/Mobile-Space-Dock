@@ -1,0 +1,90 @@
+news "no new navy ship"
+	location
+		government "Republic"
+	to show
+		not "Acquire Mobile Space Dock: offered"
+	name
+		word
+			"Reporter"
+			"Daily govermental digest"
+	message
+		word
+			"There has been no confirmation from Navy Design Bureau on a new capital vessel type being build right now. Our sources claim, that large funding budget was reserved some time ago for top secret project of grand scale. Yet the details are unknown."
+			"The Admiralty has claimed that no public funding is being used for any undisclosed capital vessel construction. All Navy projects have already been approved and are reported in the annual Navy budget report in section 3a. Any claims on new type capital vessels are unfounded and dubious."
+
+news "mobile dock got stolen"
+	location
+		government "Republic"
+	to show
+		has "Acquire Mobile Space Dock: offered"
+		not "Acquire Mobile Space Dock: done"
+	name
+		word
+			"Navy Reporter"
+			"Reporter"
+	message
+		word
+			"On recent news conference, Admiralty has officially denied, that experimental capital vessel was damaged and stolen by unidentified party. Such claims are said to be misinterpreted intel on results of old decommissioned vessels trials that were found to be unfit for further reuse and transferred for scrapping."
+			"During Senate hearing on Navy capital vessels missing, Admiral Connors from Design Bureau has confirmed that no serving capital vessel has harmed, stolen or misused, and any recent reports claiming to the contrary are fake news."
+
+news "mobile dock got stolen - pirates"
+	location
+		government Pirate
+		attributes "north"
+	to show
+		has "Acquire Mobile Space Dock: offered"
+		not "Acquire Mobile Space Dock: done"
+	name
+		word
+			"Half drunk spacedock worker"
+			"Jolly pirate captain"
+	message
+		word
+			`	The spaceport is definiley too cheerfull, as the large group of workers lsiten to one tipsy parton. "You not gonna belive it. Red Diggers not only sat in Navy database for more than a year undetected, but they also managed to get away with a heist on a new huge capital ship. The lured escort away and whisked it away from testing grounds. They should have been here some time ago. If not, they're probably redecorating it as an asterior, and a surely big one."`
+			`	The guy in a spaceport is deffinitely gloating to loud. "Friend of mine hacked theit database and the blueys never noticed that he ciphered them the whole designs calalogue. Everytinhg, old designs, lif designs, even the laters capilat ships. And, he was a smart one, he coded them their backups... all of them. Now, the Reds are going to have the only copy of the new Nevy not-so-rusteee bucket."`
+
+news "mobile dock is mine"
+	location
+		government "Republic"
+	to show
+		or
+			has "Acquire Mobile Space Dock: done"
+			has "Acquire Mobile Space Dock: failed"
+			has "Acquire Mobile Space Dock: declined"
+	name
+		word
+			"Reporter"
+			"Navy Media Relations Officer"
+	message
+		word
+			"A famous Admiral Connors from Navy Design Bureau has finally decided to retire from active duty."
+			"Navy Command has issued a warning, that the old, damaged and unfit for flight vessel that was scuttled, had recently been repurposed as a makeshift flying dock. All stations and planets are advised to proceed with caution during interactions with this risky derelict. The ship was decommissioned and was never meant for a reuse. A new owner of the wreck is strongly advised to return it to the nearest Navy shipyard for proper disassembly."
+			"The Senate has issued a request to the Navy Command for a report on ongoing projects that have no public funding. The budget and defence commissions are interested if the Navy is spending outside preplanned budgetary constraints. The Navy has claimed, that such report will be delivered as soon as possible, but given personnel and funding cuts, it might require some additional time as that subject requires detailed inquiries into all units project. The necessary requests for report were already issued to respective field commands."
+
+news "mobile dock is mine - pirates"
+	location
+		government Pirate
+		attributes "north"
+	to show
+		has "Acquire Mobile Space Dock: done"
+	name
+		word
+			"Anoying spacedock worker"
+			"Tipsy pirate captain"
+	message
+		word
+			`	The spaceport is quiet and hardly attended. The local bars are yet somewhat full. In one, a guy commnets loudly on recent events. You know, how it is. Once You ride, once you're ridden. Red Diggers could have it all. Yet, as soona as the stole some big ass flying dock from Navy, some smart-ass in capital razed them to the bones and toke it away. It could have been such a sweet base by now." You walk away smiling and knowing fully well who's the new owner of a shiny flying chop-shop is.`
+
+news "mobile dock is mine - pirates"
+	location
+		government Pirate
+		attributes "north"
+	to show
+		has "Acquire Mobile Space Dock: failed"
+	name
+		word
+			"Anoying spacedock worker"
+			"Tipsy pirate captain"
+	message
+		word
+			`	The spaceport is quiet and hardly attended. The local bars are yet somewhat full. In one, a guy commnets loudly on recent events. You know, how it is. Once You ride, once you're ridden. Red Diggers could have it all. Yet, as soona as the stole some big ass flying dock from Navy, some smart-ass in capital razed it with the whole gang. One moment you've bested the whole Navy inteligence and security. The next, POOF, and you're gone couse some capital jumped on You fixin your drive. Sad day for all of us." You walk away knowing full well who that "smart-ass" was. It was a good day for huning and that thing. It needed killing!`
