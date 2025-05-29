@@ -55,5 +55,5 @@ ship "Mobile Space Dock"
 	explode "huge explosion" 30
 	"final explode" "final explosion large"
 
-	description "This is an experimental Navy Mobile Space Dock fielded for in-situ repairs and outfit changes. As this is a utiliy vessel, if has poor offensive capabilities with only few deffensive turrets and figher bays. It is meant to be a forward repair base for Navy long range operations, without any combat roles assigned."
+	description "This is an experimental Navy Mobile Space Dock fielded for in-situ repairs and outfit changes. As this is a utility vessel, it has a poor offensive capabilities with only few defensive turrets and fighter bays. It is meant to be a forward repair base for Navy long range operations, without any combat roles assigned."
 	description "The dock has to be deployed before the outfitter is operational."

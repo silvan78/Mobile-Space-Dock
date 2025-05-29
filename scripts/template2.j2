@@ -1,6 +1,6 @@
 mission "Fleet: Deploy MSD on {{ origin }}"
 	name "Fleet: Deploy MSD on {{ origin }}"
-	description `Deploy the Mobile Space Dock installations on the orbit of {{ origin }} for in-situ reparis and outfit changes. Deployed MSD dock cannot re-redeployed elsewhere unless repacked. Check MSD log to track deployment.`
+	description `Deploy the Mobile Space Dock installations on the orbit of {{ origin }} for in-situ repairs and outfit changes. Deployed MSD dock cannot re-redeployed elsewhere unless repacked. Check MSD log to track deployment.`
 	repeat
 	job
 	source "{{ origin }}"
@@ -25,7 +25,7 @@ event "Fleet: Deploy MSD on {{ origin }}"
 
 mission "Fleet: Pack MSD on {{ origin }}"
 	name "Fleet: Pack MSD on {{ origin }}"
-	description `Disassemble some Mobile Space Dock installtions on {{ origin }} and pack is into the MSD vessel so it can be redeployed elsewhere.`
+	description `Disassemble some Mobile Space Dock installations on {{ origin }} and pack is into the MSD vessel so it can be redeployed elsewhere.`
 	repeat
 	job
 	source "{{ origin }}"

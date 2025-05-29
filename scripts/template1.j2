@@ -15,7 +15,7 @@ mission "Acquire Mobile Space Dock"
 		on capture
 			dialog "Such a great, legitimate salvage. Now the Mobile Space Dock is yours and no court can take it away. Just need to haul it away and fix it somehow. Be quick, dock somewhere and get it registered, before Navy declares, that You're the next target for a salvage operation."
 		on destroy
-			dialog `As the Dock remains disapears into a cloud of plastic and glass dust mingled with a molten metal plates, You contemplate, if that was the only copy, or will there be more of this flying monstrosity. It could be usefull, but having Navy base flying around every corner of this galaxy? "Naah, it needed killin!".`
+			dialog `As the Dock remains disappears into a cloud of plastic and glass dust mingled with a molten metal plates, You contemplate, if that was the only copy, or will there be more of this flying monstrosity. It could be useful, but having Navy base flying around every corner of this galaxy? "Nah, it needed killing!".`
 	npc kill
 		government "Pirate"
 		personality daring staying
@@ -27,10 +27,10 @@ mission "Acquire Mobile Space Dock"
 		ship "Hawk" "My Proud Divorce"
 		system "Mintaka"
 	on offer
-		log `Betelguese Prime spacedock worker warned me that some secret navy capital ship got broken in the pirate infested hood. I wonder what is it and is it worth the effort?`
+		log `Betelguese Prime space dock worker warned me that some secret navy capital ship got broken in the pirate infested hood. I wonder what is it and is it worth the effort?`
 		conversation
 			scene MobileSpaceDock-thumb
-			`You notice that the spaceport is somewhat louder and have bit more nervous atmosphere, as there are deffinitely to many Navy ground personell running and shouting on each other.`
+			`You notice that the spaceport is somewhat louder and have bit more nervous atmosphere, as there are definitely to many Navy ground personnel running and shouting on each other.`
 			`	A fellow civilian ground worker walk up to You laughing. "You heard? Navy maintenance are frantically looking for thruster couplers. Obviously they needin fixin something real fast, but they don't want to reveal what."`
 			choice
 				`	"Do you know what got broken?"`
@@ -38,17 +38,16 @@ mission "Acquire Mobile Space Dock"
 				`	"With their rust buckets and no money they always have something broken. As for shouting, that's simply their style. So why should I care."`
 					decline
 			label capital_ship
-			`	The worker gets a little bit more seriuous. "All in all, it may sound crazy, but they had some big ship testin somewhere and it got broken. Obviously, that was some hot, secret, spicy stuff that needin no attention. And, it got broken."`
-			`	"With all these pirates around, I wouldn'tbe suprised if thy're already swarmin it."`
+			`	The worker gets a little bit more serious. "All in all, it may sound crazy, but they had some big ship testin somewhere and it got broken. Obviously, that was some hot, secret, spicy stuff that needin no attention. And, it got broken."`
+			`	"With all these pirates around, I wouldn't be surprised if they're already swarmin it."`
 			choice
 				`	"I have no spare couplers, but I'll keep and open eye out there."`
 					goto capital_missing
 				`	"Eh, so it is pirates vs navy now? Not my grinder, but thanks for the warning."`
 					decline
 			label capital_missing
-			`	So somewhere around here there's a new Navy hush capital ship that is broken, and pirates might be attacking it.`
+			`	So somewhere around here there's a new Navy hush capital ship that is broken, and pirates might be attacking or even capping it.`
 			`	You ponder "Hmm, if I could save it, Navy would be glad, but if it's already pirated... It's like a real free estate and a legitimate salvage!"`
 				accept
 	on complete
 		log `I have acquired a Navy Mobile Space Dock (MSD) vessel from the Pirates as a legitimate salvage.`
-
