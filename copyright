@@ -1,0 +1,13 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: Mobile Space Dock
+Upstream-Contact: Lukasz Knizewski <lukasz.knizewski@gmail.com>
+Source: https://github.com/silvan78/Mobile-Space-Dock
+
+Files: *
+Copyright: Lukasz Knizewski <lukasz.knizewski@gmail.com>
+License: GPL-3+
+
+Files: icon.png, images/*
+Copyright: Felipe Castro
+Source: https://in.pinterest.com/pin/space-dock-nar30974-3d-model-free-download--519673244524979078/
+License: ??

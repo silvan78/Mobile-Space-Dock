@@ -1,4 +1,5 @@
-Adds one-time option to capture human Navy Mobile Space Dock. A ship, that allows to single deploy outfitter anywhere.
-Look for spaceport news as hints on mision.
-v.0.9 by Silvan
+A ship that allows You to deploy outfitter on outfitter/spaceport-less planets and stations.
+Watch the Navy design Bureau news for officially declined ones.
 
+v.0.9 by Silvan
+ES: 10.12
